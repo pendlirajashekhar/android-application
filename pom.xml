@@ -9,6 +9,7 @@
   </parent>
   <artifactId>kleeteams</artifactId>
   <version>1.0</version>
+  <packaging>war</packaging>
   <name>kleeteams</name>
   <description>
     Contains Guava's com.google.common.util.concurrent.ListenableFuture class,
