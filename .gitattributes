@@ -1,0 +1,3 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.project filter=lfs diff=lfs merge=lfs -text
+*.KleeTeams filter=lfs diff=lfs merge=lfs -text

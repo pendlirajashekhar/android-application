@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kleeteams">
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KleeTeams"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin.Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Informationlist"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.InternWorkInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.IssueCertificate"
+            android:exported="false" />
+        <activity
+            android:name=".Intern.Certificates"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Client.ClientInformation"
+            android:exported="false" />
+        <activity
+            android:name=".Intern.InternHome"
+            android:exported="false" />
+        <activity
+            android:name=".Client.ClientHome"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Authentication.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Register"
+            android:exported="false" />
+        <activity
+            android:name=".Intern.Certificates"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Intern.WorkDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Intern.Information"
+            android:exported="false" />
+        <activity
+            android:name=".Intern.AddProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ClientInformation"
+            android:exported="false" />
+        <activity
+            android:name=".Client.TicketSystem"
+            android:exported="false" />
+        <activity
+            android:name=".Client.ProjectInformation"
+            android:exported="false" />
+        <activity
+            android:name=".Client.ProfileInformation"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.InternInformation"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Approve"
+            android:exported="false" />
+    </application>
+
+</manifest>

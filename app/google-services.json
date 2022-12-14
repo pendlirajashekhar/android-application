@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "317715442184",
+    "firebase_url": "https://kleeteams-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kleeteams",
+    "storage_bucket": "kleeteams.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317715442184:android:2b011a3be0beb847b73fbd",
+        "android_client_info": {
+          "package_name": "com.example.kleeteams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317715442184-svvre1g39m881j976o0lb5cuoa7jvh7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC61kcDSKSP7oK6qskGlk7GDsQzzKeXGlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317715442184-svvre1g39m881j976o0lb5cuoa7jvh7c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

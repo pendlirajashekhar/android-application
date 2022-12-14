@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KleeTeams</string>
+    <string-array name="modules">
+        <item>client</item>
+        <item>intern</item>
+    </string-array>
+</resources>
