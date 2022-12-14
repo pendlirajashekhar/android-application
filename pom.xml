@@ -6,11 +6,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example.android</groupId>
   <artifactId>my-android-app</artifactId>
-  <version>1.0.0</version>
+  <version>0.1</version>
   <packaging>apk</packaging>
   <name>my-android-app</name>
 
   <build>
+    <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
@@ -20,12 +21,13 @@
           <sdk>
             <platform>8</platform>
           </sdk>
+          <file>${project.build.directory}/${project.artifactId}-${project.version}-aligned.apk</file>
           <emulator>
             <avd>YOUR_AVD_NAME</avd>
             <options>-snapshot 1 -scale 0.8</options>
           </emulator>
           <sign>
-            <debug>true</debug>
+            <debug>false</debug>
           </sign>
           <zipalign>
             <verbose>true</verbose>
@@ -37,6 +39,7 @@
         <extensions>true</extensions>
         <executions>
           <execution>
+            <id>alignApk</id>
             <phase>install</phase>
             <goals>
               <goal>zipalign</goal>
@@ -51,6 +54,26 @@
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jarsigner-plugin</artifactId>
+        <version>1.2</version>
+        <executions>
+          <execution>
+            <id>sign</id>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <keystore>${project.basedir}/key.store</keystore>
+          <alias>ALIAS</alias>
+          <storepass>PASSWORD/storepass>
+          <keypass>PASSWORD</keypass>
+          <verbose>true</verbose>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
@@ -58,7 +81,7 @@
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>android</artifactId>
-      <version>1.6_r2</version>
+      <version>2.1.2</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
