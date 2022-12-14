@@ -7,9 +7,9 @@
     <artifactId>guava-parent</artifactId>
     <version>26.0-android</version>
   </parent>
-  <artifactId>listenablefuture</artifactId>
+  <artifactId>klee</artifactId>
   <version>1.0</version>
-  <name>Guava ListenableFuture only</name>
+  <name>klee</name>
   <description>
     Contains Guava's com.google.common.util.concurrent.ListenableFuture class,
     without any of its other classes -- but is also available in a second
