@@ -9,7 +9,6 @@
   </parent>
   <artifactId>kleeteams</artifactId>
   <version>1.0</version>
-  <packaging>war</packaging>
   <name>kleeteams</name>
   <description>
     Contains Guava's com.google.common.util.concurrent.ListenableFuture class,
@@ -40,15 +39,15 @@
         <artifactId>animal-sniffer-maven-plugin</artifactId>
       </plugin>
       <plugin>
-        <artifactId>maven-war-plugin</artifactId>
+        <artifactId>maven-javadoc-plugin</artifactId>
         <executions>
           <execution>
-            <id>war</id>
+            <id>attach-docs</id>
           </execution>
           <execution>
-            <id>generate-war-site-report</id>
+            <id>generate-javadoc-site-report</id>
             <phase>site</phase>
-            <goals><goal>war</goal></goals>
+            <goals><goal>javadoc</goal></goals>
           </execution>
         </executions>
       </plugin>
