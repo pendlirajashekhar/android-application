@@ -11,8 +11,8 @@
         <version>1.2.4</version>
     </parent>
 
-    <groupId>kleeteams</groupId>
-    <artifactId>android</artifactId>
+    <groupId>android</groupId>
+    <artifactId>kleeteams</artifactId>
     <version>0.0.1</version>
 
     <properties>
