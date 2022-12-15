@@ -1,11 +1,11 @@
- <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>kleedroidgroupId>
-  <artifactId>androidfactId>
+  <groupId>klee.android.war</groupId>
+  <artifactId>android</artifactId>
   <version>1.0.0</version>
   <packaging>war</packaging>
-  <name>kleeteams<name>
-  <description>A very simple Maven-enabled WAR project</description>
+  <name>kleeteams</name>
+  <description>A very simple Maven-enabled WAR web project</description>
   <dependencies>
   	<dependency>
   		<groupId>com.google.code.gson</groupId>
@@ -33,3 +33,4 @@
     </plugins>
   </build>
 </project>
+
