@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh 'cp -r /root/.jenkins/workspace/klee/target/kleeteams-1.0.jar /opt/apache-tomcat-9.0.71/webapps/'
+                sh 'cp -r /root/.jenkins/workspace/android-application/target/kleeteams-1.0.jar /opt/apache-tomcat-9.0.71/webapps/'
             }
         }
     }
