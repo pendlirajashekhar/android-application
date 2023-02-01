@@ -17,8 +17,8 @@ on:
 
 jobs:
   build:
-    name: android-application
-    runs-on: amazon linux-latest
+    name: Setup Environment and build
+    runs-on: amazon linux
     steps:
       - name: Checkout the code to specific branch
         uses: actions/checkout@v2
