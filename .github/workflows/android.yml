@@ -66,8 +66,8 @@ jobs:
         with:
           java-version: 11
 
-     - name: SonarCloud Scan
-       run: chmod +x ./gradlew app:sonarqube -Dsonar.login=${{ secrets.SONAR_TOKEN }} 
+     - name: aws cloud
+       run: chmod +x ./gradlew
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
