@@ -65,9 +65,8 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-
-     - name: aws cloud
-       run: chmod +x ./gradlew
+      - name: SonarCloud Scan
+        run: chmod +x ./gradlew
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
