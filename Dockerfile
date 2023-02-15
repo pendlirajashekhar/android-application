@@ -1,10 +1,13 @@
+# syntax=docker/dockerfile:1
+
 FROM ubuntu:latest
 
 WORKDIR /app
 
+COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 RUN ./mvnw dependency:resolve
 
 COPY src ./src
 
-CMD ["./mvnw"]
+CMD ["./mvnw", "spring-boot:run"]
