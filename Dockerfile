@@ -1,9 +1,11 @@
-FROM  ubunyu:latest
+FROM eclipse-temurin:17-jdk-jammy
 
 WORKDIR /app
 
-COPY . /app
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:resolve
 
-RUN apt-get update & apt-get install -y open jdk
+COPY src ./src
 
-CMD ["jdk"]
+CMD ["./mvnw", "spring-boot:run"]
