@@ -68,7 +68,7 @@ jobs:
       - name: SonarCloud Scan
         run: chmod +x ./gradlew
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ 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 }}
 
   package:
     needs: [static-code-analysis]
